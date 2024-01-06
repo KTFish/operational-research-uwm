@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+env_bak/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE files
+.vscode/
+.idea/
+
+# Pyomo generated files
+*.lp
+*.mps
+*.nl
+*.log
+*.glpk
+*.gurobi
+*.cbc
+*.aux
+*.dvi
+*.fls
+*.ilg
+*.ind
+*.log
+*.out
+*.toc
+
+# Ignore the Pyomo data directory
+data/
+
+# Ignore generated solution files
+results/
+
+# Ignore any other files that should not be in version control
+*.bak
+*.swp
+.DS_Store
