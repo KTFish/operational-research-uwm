@@ -16,21 +16,14 @@ def plot(model):
     # Objective function
     z = lambda x1, x2: x1 + 2 * x2
 
-    # Create meshgrid
-    X1, X2 = np.meshgrid(x1, x2)
-    Z = z(X1, X2)
-
     plt.figure(figsize=(8, 6))
     plt.plot(x1, c1, label=r'$x_1 + 2x_2 \leq 10$', color='blue')
-    # plt.plot(x1, np.maximum(c2, np.ones_like(c2)), label=r'$x_1 + x_2 \geq 1$', color='green')
     plt.plot(x1, c2, label=r'$x_1 + x_2 \geq 1$', color='green')
     plt.axhline(y=1, color='red')
     plt.axhline(y=4, color='red')
 
-    plt.fill_between(x1, 1, 4, color='gray', alpha=0.3, label=r'$1 \leq x_2 \leq 4$')  # Fill feasible region for x2
-
-    # Optimal solution
-    plt.plot(model.x1.value, model.x2.value, 'ro')  # Red dot
+    plt.fill_between(x1, 1, 4, color='gray', alpha=0.3, label=r'$1 \leq x_2 \leq 4$')
+    plt.plot(model.x1.value, model.x2.value, 'ro')
     plt.text(model.x1.value, model.x2.value, f'  Optimal\n  ({model.x1.value:.2f}, {model.x2.value:.2f})',
              verticalalignment='bottom')
 
