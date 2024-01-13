@@ -9,10 +9,10 @@ Objective function:
 $$ \max Z = x_1 + 2x_2 $$
 
 Subject to:
-- $$ x_1 + 2x_2 \leq 10 $$ 
-- $$ x_1 + x_2 \geq 1 $$ 
-- $$ 4 \geq x_2 \geq 1 $$ 
-- $$ x_1, x_2 \geq 0 $$
+- $x_1 + 2x_2 \leq 10$
+- $x_1 + x_2 \geq 1$
+- $4 \geq x_2 \geq 1$ 
+- $x_1, x_2 \geq 0$
 
 ![xd](plots/plot_task1.png)
 
