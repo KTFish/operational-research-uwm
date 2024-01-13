@@ -13,7 +13,7 @@ $$ x_1 + x_2 \geq 1 $$
 $$ 4 \geq x_2 \geq 1 $$
 $$ x_1, x_2 \geq 0 $$
 
-![plot]("plots/plot_task1.png")
+![xd](plots/plot_task1.png)
 
 
 ### Task 2 - Transportation Problem
